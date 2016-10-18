@@ -17,7 +17,7 @@ controller benchmark.
 Prerequisites
 -------------
 
-* Ruby 2.0.0 or higher ([RVM][rvm]).
+* Ruby 2.2.5 or higher ([RVM][rvm]).
 * [Open vSwitch][openvswitch] (`apt-get install openvswitch-switch`).
 
 [rvm]: https://rvm.io/
@@ -41,14 +41,12 @@ Run this controller
 
 ```
 $ ./bin/trema run ./lib/cbench.rb
-or
-$ ./bin/trema run ./lib/fast_cbench.rb  # multi-threaded version
 ```
 
 then, on another terminal
 
 ```
-$ ./bin/cbench --port 6633 --switches 1 --loops 10 --ms-per-test 10000 --delay 1000 --throughput
+$ ./bin/cbench --port 6653 --switches 1 --loops 10 --ms-per-test 10000 --delay 1000 --throughput
 ```
 
 Enjoy!
